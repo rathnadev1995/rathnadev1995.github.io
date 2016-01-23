@@ -1,0 +1,642 @@
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+    <style type = "text/css">
+.hidden
+{
+display:none;
+}
+.unhidden
+{
+display:block;
+}
+</style>
+<title>
+Quiz
+</title>
+<h1><font color = "green">Here is your question!</font></h1>
+<p><font color = "blue">Answer all questions!</font> </p>
+
+
+<script type = "text/javascript">
+    var seq=0
+    var glo=0
+function firstAnswer()
+
+  {
+
+    for (i=0 ; i<document.first.quiz.length ; i++)
+         {
+              if (document.first.quiz[i].checked==true) 
+           {
+              var t = document.first.quiz[i].value
+           }
+ }
+
+if (t == "1" )
+ { seq=seq+1
+ document.getElementById("txt1").value = "1";  
+ document.getElementById("txt11").value = "0";
+  }
+else  { 
+    glo=glo+1
+   document.getElementById("txt11").value = "1";
+   document.getElementById("txt1").value = "0";
+}
+ var item = document.getElementById("two");
+ if (item) {
+ item.className=(item.className=='hidden')?'unhidden':'hidden';
+ }
+
+ var item = document.getElementById("one");
+ if (item) {
+ item.className=(item.className=='unhidden')?'hidden':'unhidden';
+ }
+}
+
+
+
+
+function secondAnswer()
+  {
+
+    for (i=0 ; i<document.second.quiz.length ; i++)
+         {
+              if (document.second.quiz[i].checked==true) 
+           {
+              var t = document.second.quiz[i].value
+           }
+ }
+
+if (t == "1" )
+ { seq=seq+1
+  document.getElementById("txt2").value = "1"
+   document.getElementById("txt22").value = "0"
+  }
+else  { glo=glo+1
+   document.getElementById("txt22").value = "1"
+   document.getElementById("txt2").value = "0"
+}
+ var item = document.getElementById("three");
+ if (item) {
+ item.className=(item.className=='hidden')?'unhidden':'hidden';
+ }
+
+ var item = document.getElementById("two");
+ if (item) {
+ item.className=(item.className=='unhidden')?'hidden':'unhidden';
+ }
+}
+
+
+function thirdAnswer()
+  {
+
+    for (i=0 ; i<document.third.quiz.length ; i++)
+         {
+              if (document.third.quiz[i].checked==true) 
+           {
+              var t = document.third.quiz[i].value
+           }
+ }
+
+if (t == "1" )
+ { seq=seq+1
+  document.getElementById("txt3").value = "1"
+  document.getElementById("txt33").value = "0"
+  }
+else  { glo=glo+1
+   document.getElementById("txt33").value = "1"
+     document.getElementById("txt3").value = "0"
+}
+ var item = document.getElementById("four");
+ if (item) {
+ item.className=(item.className=='hidden')?'unhidden':'hidden';
+ }
+
+ var item = document.getElementById("three");
+ if (item) {
+ item.className=(item.className=='unhidden')?'hidden':'unhidden';
+ }
+}
+
+
+
+function fourAnswer()
+  {
+
+    for (i=0 ; i<document.four.quiz.length ; i++)
+         {
+              if (document.four.quiz[i].checked==true) 
+           {
+              var t = document.four.quiz[i].value
+           }
+ }
+
+if (t == "1" )
+ { seq=seq+1
+  document.getElementById("txt4").value = "1"
+   document.getElementById("txt44").value = "0"
+  }
+else  { glo=glo+1
+   document.getElementById("txt44").value = "1"
+   
+  document.getElementById("txt4").value = "0"
+}
+ var item = document.getElementById("five");
+ if (item) {
+ item.className=(item.className=='hidden')?'unhidden':'hidden';
+ }
+
+ var item = document.getElementById("four");
+ if (item) {
+ item.className=(item.className=='unhidden')?'hidden':'unhidden';
+ }
+}
+
+
+
+function fiveAnswer()
+  {
+
+    for (i=0 ; i<document.five.quiz.length ; i++)
+         {
+              if (document.five.quiz[i].checked==true) 
+           {
+              var t = document.five.quiz[i].value
+           }
+ }
+
+if (t == "1" )
+ { seq=seq+1
+  document.getElementById("txt5").value = "1"
+  document.getElementById("txt55").value = "0"
+  }
+else  { glo=glo+1
+   document.getElementById("txt55").value = "1"
+   document.getElementById("txt5").value = "0"
+}
+ var item = document.getElementById("six");
+ if (item) {
+ item.className=(item.className=='hidden')?'unhidden':'hidden';
+ }
+
+ var item = document.getElementById("five");
+ if (item) {
+ item.className=(item.className=='unhidden')?'hidden':'unhidden';
+ }
+}
+
+
+function sixAnswer()
+  {
+
+    for (i=0 ; i<document.six.quiz.length ; i++)
+         {
+              if (document.six.quiz[i].checked==true) 
+           {
+              var t = document.six.quiz[i].value
+           }
+       }
+
+if (t == "1" )
+ { seq=seq+1
+  document.getElementById("txt6").value = "1"
+  document.getElementById("txt66").value = "0"
+  }
+else  { glo=glo+1
+   document.getElementById("txt66").value = "1"
+   document.getElementById("txt6").value = "0"
+}
+ var item = document.getElementById("seven");
+ if (item) {
+ item.className=(item.className=='hidden')?'unhidden':'hidden';
+ }
+
+ var item = document.getElementById("six");
+ if (item) {
+ item.className=(item.className=='unhidden')?'hidden':'unhidden';
+ }
+}
+
+function sevenAnswer()
+  {
+
+    for (i=0 ; i<document.seven.quiz.length ; i++)
+         {
+              if (document.seven.quiz[i].checked==true) 
+           {
+              var t = document.seven.quiz[i].value
+           }
+       }
+
+if (t == "1" )
+ { seq=seq+1
+  document.getElementById("txt7").value = "1"
+  document.getElementById("txt77").value = "0"
+  }
+else  { glo=glo+1
+   document.getElementById("txt77").value = "1"
+   document.getElementById("txt7").value = "0"
+}
+ var item = document.getElementById("eight");
+ if (item) {
+ item.className=(item.className=='hidden')?'unhidden':'hidden';
+ }
+
+ var item = document.getElementById("seven");
+ if (item) {
+ item.className=(item.className=='unhidden')?'hidden':'unhidden';
+ }
+}
+
+
+function eightAnswer()
+  {
+
+    for (i=0 ; i<document.eight.quiz.length ; i++)
+         {
+              if (document.eight.quiz[i].checked==true) 
+           {
+              var t = document.eight.quiz[i].value
+           }
+       }
+
+if (t == "1" )
+ { seq=seq+1
+  document.getElementById("txt8").value = "1"
+  document.getElementById("txt88").value = "0"
+  }
+else  { glo=glo+1
+   document.getElementById("txt88").value = "1"
+   document.getElementById("txt8").value = "0"
+}
+ var item = document.getElementById("nine");
+ if (item) {
+ item.className=(item.className=='hidden')?'unhidden':'hidden';
+ }
+
+ var item = document.getElementById("eight");
+ if (item) {
+ item.className=(item.className=='unhidden')?'hidden':'unhidden';
+ }
+}
+
+
+function nineAnswer()
+  {
+
+    for (i=0 ; i<document.nine.quiz.length ; i++)
+         {
+              if (document.nine.quiz[i].checked==true) 
+           {
+              var t = document.nine.quiz[i].value
+           }
+       }
+
+if (t == "1" )
+ { seq=seq+1
+  document.getElementById("txt9").value = "1"
+  document.getElementById("txt99").value = "0"
+  }
+else  { glo=glo+1
+   document.getElementById("txt99").value = "1"
+   document.getElementById("txt9").value = "0"
+}
+ var item = document.getElementById("ten");
+ if (item) {
+ item.className=(item.className=='hidden')?'unhidden':'hidden';
+ }
+
+ var item = document.getElementById("nine");
+ if (item) {
+ item.className=(item.className=='unhidden')?'hidden':'unhidden';
+ }
+}
+
+function tenAnswer()
+  {
+
+    for (i=0 ; i<document.ten.quiz.length ; i++)
+         {
+              if (document.ten.quiz[i].checked==true) 
+           {
+              var t = document.ten.quiz[i].value
+           }
+       }
+
+if (t == "1" )
+ { seq=seq+1
+  document.getElementById("txt10").value = "1"
+  document.getElementById("txt100").value = "0"
+  }
+else  { glo=glo+1
+   document.getElementById("txt100").value = "1"
+   document.getElementById("txt10").value = "0"
+}
+ var item = document.getElementById("eleven");
+ if (item) {
+ item.className=(item.className=='hidden')?'unhidden':'hidden';
+ }
+
+ var item = document.getElementById("ten");
+ if (item) {
+ item.className=(item.className=='unhidden')?'hidden':'unhidden';
+ }
+}
+
+function elevenAnswer()
+  {
+
+    for (i=0 ; i<document.eleven.quiz.length ; i++)
+         {
+              if (document.eleven.quiz[i].checked==true) 
+           {
+              var t = document.eleven.quiz[i].value
+           }
+       }
+
+if (t == "1" )
+ { seq=seq+1
+  document.getElementById("txt11").value = "1"
+  document.getElementById("txt111").value = "0"
+  }
+else  { glo=glo+1
+   document.getElementById("txt111").value = "1"
+   document.getElementById("txt11").value = "0"
+}
+var item = document.getElementById("helo");
+item.className=(item.className=='hidden')?'unhidden':'hidden';
+}
+
+function total()
+{
+var a = parseInt(document.getElementById("txt1").value)
+var b = parseInt(document.getElementById("txt2").value)
+var c = parseInt(document.getElementById("txt3").value)
+var d = parseInt(document.getElementById("txt4").value)
+var e = parseInt(document.getElementById("txt5").value)
+var f = parseInt(document.getElementById("txt6").value)
+var g = parseInt(document.getElementById("txt7").value)
+var h = parseInt(document.getElementById("txt8").value)
+var i = parseInt(document.getElementById("txt9").value)
+var j = parseInt(document.getElementById("txt10").value)
+var k = parseInt(document.getElementById("txt11").value)
+
+ var l = a + b + c + d + e + f + g + h + i + j+k 
+document.getElementById("txt").value = seq.toString()
+alert("your score is "+seq);
+var a1 = parseInt(document.getElementById("txt11").value)
+var b1 = parseInt(document.getElementById("txt22").value)
+var c1 = parseInt(document.getElementById("txt33").value)
+var d1 = parseInt(document.getElementById("txt44").value)
+var e1 = parseInt(document.getElementById("txt55").value)
+var f1 = parseInt(document.getElementById("txt66").value)
+var g1 = parseInt(document.getElementById("txt77").value)
+var h1 = parseInt(document.getElementById("txt88").value)
+var i1 = parseInt(document.getElementById("txt99").value)
+var j1 = parseInt(document.getElementById("txt100").value)
+var k1 = parseInt(document.getElementById("txt111").value)
+
+ var l1 = a1 + b1 + c1 + d1 + e1 + f1 + g1 + h1 + i1 + j1+k1
+ document.getElementById("txts").value = glo.toString()
+
+alert("your score is "+glo);
+var max;
+var min;
+if(l1<l)
+{
+    max=l;
+    min=l1;
+    alert("you are more sequential learner");
+             document.getElementById("ans3").value="sequential"
+
+}
+else
+{
+    
+            max=l1;
+            min=l;
+              alert("you are more global  learner");
+                       document.getElementById("ans3").value="global"
+
+}
+var dif=max-min;
+
+}
+
+</script>
+
+
+
+<div id = "one" class = "unhidden">
+<form name = "first"  >
+    
+   
+1. I tend to</br></br>
+<input type = "radio" id = "a" value = "1" name = "quiz" >understand details of a subject but may be fuzzy about its overall structure.
+<br></br>
+<input type = "radio" id = "a" value = "2" name = "quiz">understand the overall structure but may be fuzzy about details.
+<br></br>
+
+<input type = "button" value = "next" onclick = "firstAnswer()"> 
+<input type = "hidden" id = "txt1">
+<input type = "hidden" id = "txt11">
+
+</form>
+</div>
+
+<div  class = "hidden" id = "two">
+<form name = "second" >
+      
+2. Once I understand
+
+</br></br>
+<input type = "radio" id = "a" value = "1" name = "quiz" >all the parts, I understand the whole thing.
+<br></br>
+<input type = "radio" id = "a" value = "2" name = "quiz">the whole thing, I see how the parts fit.
+<br></br>
+
+<input type = "button" value = "next" onclick = "secondAnswer()"> 
+<input type = "hidden" id = "txt2">
+<input type = "hidden" id = "txt22">
+
+</form>
+</div>
+
+<div class = "hidden" id = "three">
+<form name = "third" >
+      <img src="Batman Beyond.jpg" align="right" width="400" height="400">
+3. When I solve math problems</br></br>
+<input type = "radio" id = "a" value = "1" name = "quiz" >I usually work my way to the solutions one step at a time.
+<br></br>
+<input type = "radio" id = "a" value = "2" name = "quiz"> I often just see the solutions but then have to struggle to figure out the steps to get to them.
+<br></br>
+
+<input type = "button" value = "next" onclick = "thirdAnswer()"> 
+<input type = "hidden" id = "txt3">
+<input type = "hidden" id = "txt33">
+
+</form>
+</div>
+
+<div class = "hidden" id = "four">
+<form name = "four" >  
+    
+    
+4. When I'm analyzing a story or a novel
+</br></br>
+<input type = "radio" id = "a" value = "1" name = "quiz" >I think of the incidents and try to put them together to figure out the themes.<br></br>
+<input type = "radio" id = "a" value = "2" name = "quiz">I just know what the themes are when I finish reading and then I have to go back and find the incidents that demonstrate them.
+<br></br>
+<input type = "button" value = "next" onclick = "fourAnswer()"> 
+<input type = "hidden" id = "txt4">
+<input type = "hidden" id = "txt44">
+
+</form>
+</div>
+
+<div class = "hidden" id = "five">
+<form name = "five" >
+      
+5. It is more important to me that an instructor
+</br></br>
+<input type = "radio" id = "a" value = "1" name = "quiz" > lay out the material in clear sequential steps.
+<br></br>
+<input type = "radio" id = "a" value = "2" name = "quiz"> give me an overall picture and relate the material to other subjects.
+<br></br>
+
+<input type = "button" value = "next" onclick = "fiveAnswer()"> 
+<input type = "hidden" id = "txt5">
+<input type = "hidden" id = "txt55">
+
+</form>
+</div>
+
+<div class = "hidden" id = "six">
+<form name = "six" >
+      <img src="q3.jpg" align="right" width="400" height="400">
+6. I learn
+</br></br>
+<input type = "radio" id = "a" value = "1" name = "quiz" >at a fairly regular pace. If I study hard, I'll "get it."
+<br></br>
+<input type = "radio" id = "a" value = "2" name = "quiz">in fits and starts. I'll be totally confused and then suddenly it all "clicks."
+<br></br>
+
+<input type = "button" value = "next" onclick = "sixAnswer()"> 
+<input type = "hidden" id = "txt6">
+<input type = "hidden" id = "txt66">
+
+
+</form>
+</div>
+
+<div class = "hidden" id = "seven">
+<form name = "seven" >
+      
+7. When considering a body of information, I am more likely to
+</br></br>
+<input type = "radio" id = "a" value = "1" name = "quiz" >focus on details and miss the big picture.
+<br></br>
+<input type = "radio" id = "a" value = "2" name = "quiz">try to understand the big picture before getting into the details.
+<br></br>
+
+<input type = "button" value = "next" onclick = "sevenAnswer()"> 
+<input type = "hidden" id = "txt7">
+<input type = "hidden" id = "txt77">
+
+</form>
+</div>
+
+<div class = "hidden" id = "eight">
+<form name = "eight" >
+      
+8. When writing a paper, I am more likely to
+</br></br>
+
+<input type = "radio" id = "a" value = "1" name = "quiz" >work on (think about or write) the beginning of the paper and progress forward.
+<br></br>
+<input type = "radio" id = "a" value = "2" name = "quiz">work on (think about or write) different parts of the paper and then order them.
+<br></br>
+
+<input type = "button" value = "next" onclick = "eightAnswer()"> 
+<input type = "hidden" id = "txt8">
+<input type = "hidden" id = "txt88">
+
+</form>
+</div>
+
+<div class = "hidden" id = "nine">
+<form name = "nine" >
+      
+9. When I am learning a new subject, I prefer to
+</br></br>
+<input type = "radio" id = "a" value = "1" name = "quiz" >stay focused on that subject, learning as much about it as I can.<br></br>
+<input type = "radio" id = "a" value = "2" name = "quiz">try to make connections between that subject and related subjects.
+<br></br>
+<input type = "button" value = "next" onclick = "nineAnswer()"> 
+<input type = "hidden" id = "txt9">
+<input type = "hidden" id = "txt99">
+
+</form>
+</div>
+
+<div class = "hidden" id = "ten">
+<form name = "ten" >
+     
+10. Some teachers start their lectures with an outline of what they will cover. Such outlines are
+</br></br>
+<input type = "radio" id = "a" value = "1" name = "quiz" >somewhat helpful to me.
+<br></br>
+<input type = "radio" id = "a" value = "2" name = "quiz">very helpful to me.
+<br></br>
+
+<input type = "button" value = "next" onclick = "tenAnswer()" > 
+<input type = "hidden" id = "txt10">
+<input type = "hidden" id = "txt100">
+
+</form>
+</div>
+
+    <div class = "hidden" id = "eleven">
+
+    <form name = "eleven" >
+     
+11. When solving problems in a group, I would be more likely to
+</br></br>
+<input type = "radio" id = "a" value = "1" name = "quiz" >think of the steps in the solution process.
+<br></br>
+<input type = "radio" id = "a" value = "2" name = "quiz">think of possible consequences or applications of the solution in a wide range of areas.
+<br></br>
+
+<input type = "button" value = "next" onclick = "elevenAnswer()" id = "helo" class = "heloo"> 
+<input type = "hidden" id = "txt11">
+<input type = "hidden" id = "txt111">
+
+</form>
+   
+<input type = "hidden" id = "txt">
+<input type = "hidden" id = "txts">
+<form action="main4.jsp" method="post">
+        <input type = "hidden" name = "hi3"  id="ans3">
+<input type = "button" value = "score"  onclick = "total()">
+    <input type="submit" >
+
+
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
